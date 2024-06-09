@@ -95,9 +95,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        viewModel.stories.observe(this) { stories ->
-            Log.d("MainActivity", "Updating adapter with stories: $stories")
-            storyAdapter.submitData(lifecycle, stories)
+        viewModel.stories.observe(this) { quote ->
+            Log.d("MainActivity", "Updating adapter with stories: $quote")
+            storyAdapter.submitData(lifecycle, quote)
             binding.loadingProgressBar.visibility = View.GONE
         }
     }

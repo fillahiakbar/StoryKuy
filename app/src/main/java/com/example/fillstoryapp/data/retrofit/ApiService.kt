@@ -49,7 +49,7 @@ interface ApiService {
 
     @GET("stories")
     suspend fun getQuote(
-        @Query("page") page: Int,
-        @Query("size") size: Int
-    ): List<ListStoryItem>
+        @Query("page") page: Int = 1,
+        @Query("size") size: Int = 20
+    ): GetStoryResponse
 }

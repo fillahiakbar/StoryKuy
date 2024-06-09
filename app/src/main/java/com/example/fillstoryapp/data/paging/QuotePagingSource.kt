@@ -17,7 +17,7 @@ class QuotePagingSource(private val apiService: ApiService) : PagingSource<Int, 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, ListStoryItem> {
         return try {
             val page = params.key ?: INITIAL_PAGE_INDEX
-            val responseData = apiService.getQuote(page, params.loadSize)
+            val responseData = apiService.getQuote(page, params.loadSize).story
 
             LoadResult.Page(
                 data = responseData,
