@@ -5,9 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.fillstoryapp.data.response.story.GetStoryResponse
+import com.example.fillstoryapp.data.response.story.ListStoryItem
 
 @Database(
-    entities = [GetStoryResponse::class],
+    entities = [ListStoryItem::class],
     version = 1,
     exportSchema = false
 )

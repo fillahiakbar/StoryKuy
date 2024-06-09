@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadStories() {
-        binding.loadingProgressBar.visibility = View.VISIBLE
+        binding.loadingProgressBar.visibility = View.GONE
         lifecycleScope.launch {
             viewModel.getStories()
         }
