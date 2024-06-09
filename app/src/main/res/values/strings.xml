@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fill Story App</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="message_welcome_page">Mau Melihat Story Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di StoryKuy!</string>
+    <string name="title_welcome_page">Selamat datang di StoryKuy!</string>
+    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="message_login_page">Yuk Masuk Ke StoryKuy</string>
+    <string name="title_login_page">Sudah siap untuk melihat story yang lain?</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat Datang di Dicoding Story.</string>
+    <string name="greeting">StoryKuy</string>
+    <string name="logout">Keluar</string>
+    <string name="password_format">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="description">Description</string>
+    <string name="empty_picture">Masukan Gambar</string>
+    <string name="todo">TODO</string>
+    <string name="post">Post</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="retry">Retry</string>
+    <string name="timeout">Timeout</string>
+</resources>
