@@ -54,7 +54,7 @@ class MainViewModelTest{
 
     @Test
     fun `when Get Quote Should Not Null and Return Data`() = runTest {
-        val dummyQuote = DataDummy.generateStories()
+        val dummyQuote = DataDummy.generateDummyQuoteResponse()
 //        val data: PagingData<QuoteResponseItem> = PagingData.from(dummyQuote)
         val data: PagingData<ListStoryItem> = QuotePagingSource.snapshot(dummyQuote)
         val expectedQuote = MutableLiveData<PagingData<ListStoryItem>>()
