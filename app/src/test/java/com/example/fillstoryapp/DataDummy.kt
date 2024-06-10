@@ -13,11 +13,11 @@ object DataDummy {
                 "2023-09-03T14:00:00Z",
                 "User $i",
                 "description $i",
-                "",
+                1.0,
                 "story-$i",
                 "author + $i",
                 "quote $i",
-                "",
+                1.0
             )
             items.add(quote)
         }
