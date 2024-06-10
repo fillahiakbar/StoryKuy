@@ -39,23 +39,11 @@ class MainViewModelTest{
     @Mock
     private lateinit var userRepository: UserRepository
 
-    @Mock
-    private lateinit var apiService: ApiService
-
-    @Mock
-    private lateinit var context: Context
-
-    private lateinit var viewModel: MainViewModel
-
-    @Before
-    fun setup() {
-        viewModel = MainViewModel(userRepository)
-    }
 
     @Test
     fun `when Get Quote Should Not Null and Return Data`() = runTest {
         val dummyQuote = DataDummy.generateDummyQuoteResponse()
-//        val data: PagingData<QuoteResponseItem> = PagingData.from(dummyQuote)
+
         val data: PagingData<ListStoryItem> = QuotePagingSource.snapshot(dummyQuote)
         val expectedQuote = MutableLiveData<PagingData<ListStoryItem>>()
         expectedQuote.value = data

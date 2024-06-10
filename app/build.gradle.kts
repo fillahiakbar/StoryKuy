@@ -10,6 +10,7 @@ android {
     namespace = "com.example.fillstoryapp"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.fillstoryapp"
         minSdk = 24
@@ -40,6 +41,9 @@ android {
     buildFeatures {
         viewBinding = true
         buildConfig = true
+    }
+    testOptions {
+        unitTests.isReturnDefaultValues = true
     }
 }
 
